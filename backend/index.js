@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://nutankumari211:nutan%40123%40@cluster0.pmxpstx.m
 // Middleware
 app.use(cors(
   {
-    origin:["https://testapi-frontend.vercel.app/"],
+    origin:["https://testapi-frontend.vercel.app"],
     methods:["POST","GET","PUT"],
     credentials:true
   }
