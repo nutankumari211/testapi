@@ -11,7 +11,7 @@ function DataList() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/data/all');
+      const response = await axios.get('https://testapi-ruby.vercel.app/api/data/all');
       setData(response.data);
       setLoading(false);
     } catch (err) {
@@ -22,7 +22,7 @@ function DataList() {
 
   const fetchCount = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/data/count');
+      const response = await axios.get('https://testapi-ruby.vercel.app/api/data/count');
       setCount(response.data);
     } catch (err) {
       console.error('Error fetching count:', err);
@@ -46,7 +46,7 @@ function DataList() {
     console.log('Saving updated data:', { name: newName, age: newAge, email: newEmail });
 
     try {
-      await axios.put(`http://localhost:5000/api/data/update/${id}`, {
+      await axios.put(`https://testapi-ruby.vercel.app/api/data/update/${id}`, {
         name: newName,
         age: newAge,
         email: newEmail
