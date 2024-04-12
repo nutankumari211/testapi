@@ -13,12 +13,12 @@ mongoose.connect('mongodb+srv://nutankumari211:nutan%40123%40@cluster0.pmxpstx.m
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // Middleware
-// enable cors
+// Enable CORS for your frontend domain
 app.use(
   cors({
-    origin:["https://testapi-f.vercel.app"],
-    methods:["GET","PUT","POST"],
-   allowedHeaders: ["my-custom-header", "content-type"],
+    origin: "https://testapi-f.vercel.app",
+    methods: ["GET", "PUT", "POST"],
+    allowedHeaders: ["my-custom-header", "content-type"],
     credentials: true,
   })
 );
