@@ -1,4 +1,4 @@
-# Hosting Link - https://testapi-frontend.vercel.app/
+# Hosting Link - https://testapi-f.vercel.app/
 
 # steps to run
 1. Download the github project
