@@ -7,7 +7,7 @@ function DataList() {
   const [count, setCount] = useState({ addCount: 0, updateCount: 0 });
   const [editableItemId, setEditableItemId] = useState(null);
   const [loading, setLoading] = useState(false);
-
+  axios.defaults.withCredentials=true;
   const fetchData = async () => {
     try {
       setLoading(true);
