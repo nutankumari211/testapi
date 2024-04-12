@@ -1,0 +1,43 @@
+.add-data,
+.update-data,
+.count {
+  margin-bottom: 20px;
+}
+
+.add-data div,
+.update-data table,
+.count div {
+  margin-bottom: 10px;
+}
+
+.add-data label,
+.update-data th {
+  width: 100px;
+  display: inline-block;
+}
+
+.add-data input {
+  width: 200px;
+  padding: 5px;
+}
+
+.update-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.update-data th,
+.update-data td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.update-data th {
+  background-color: #f2f2f2;
+}
+
+.update-data button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
