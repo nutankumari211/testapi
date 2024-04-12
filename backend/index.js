@@ -18,18 +18,11 @@ app.use(
   cors({
     origin:["https://testapi-frontend.vercel.app"],
     methods:["GET","PUT","POST"],
-    optionsSuccessStatus: 200,
+   allowedHeaders: ["my-custom-header"],
     credentials: true,
   })
 );
-app.options(
-  '*',
-  cors({
-    origin: true,
-    optionsSuccessStatus: 200,
-    credentials: true,
-  })
-);
+
 app.use(bodyParser.json());
 
 // Routes
