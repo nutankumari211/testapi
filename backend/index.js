@@ -13,13 +13,22 @@ mongoose.connect('mongodb+srv://nutankumari211:nutan%40123%40@cluster0.pmxpstx.m
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // Middleware
-app.use(cors(
-  {
-    origin:["https://testapi-frontend.vercel.app"],
-    methods:["POST","GET","PUT"],
-    credentials:true
-  }
-));
+// enable cors
+app.use(
+  cors({
+    origin: true,
+    optionsSuccessStatus: 200,
+    credentials: true,
+  })
+);
+app.options(
+  '*',
+  cors({
+    origin: true,
+    optionsSuccessStatus: 200,
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 // Routes
