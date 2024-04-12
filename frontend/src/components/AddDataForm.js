@@ -6,7 +6,7 @@ function AddDataForm({ fetchData, fetchCount }) {
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState(null);
-
+   axios.defaults.withCredentials=true;
   const handleAdd = async () => {
     try {
       setError(null); 
