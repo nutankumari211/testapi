@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://nutankumari211:nutan%40123%40@cluster0.pmxpstx.m
 // enable cors
 app.use(
   cors({
-    origin:["https://testapi-frontend.vercel.app"],
+    origin:["https://testapi-f.vercel.app"],
     methods:["GET","PUT","POST"],
    allowedHeaders: ["my-custom-header", "content-type"],
     credentials: true,
