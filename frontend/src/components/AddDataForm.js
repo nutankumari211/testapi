@@ -13,7 +13,7 @@ function AddDataForm({ fetchData, fetchCount }) {
       if (!name || !age || !email) {
         throw new Error('Please fill in all fields.');
       }
-      await axios.post('http://localhost:5000/api/data/add', { name, age, email });
+      await axios.post('https://testapi-ruby.vercel.app/api/data/add', { name, age, email });
       setName('');
       setAge('');
       setEmail('');
